@@ -4,6 +4,7 @@ import data from './data.json';
 import List from './components/list';
 import Form from './components/form';
 import React, {useState} from 'react';
+import Profile from './components/profile';
 
 function App() {
     
@@ -31,6 +32,7 @@ function App() {
   
   return (
     <div className="App">
+        <Profile name="Hansel Faren" nim="2501990350"/>
         <Intro></Intro>
         <Form addTask={addTask}/>
         <List toDoList={toDoList} handleToggle={handleToggle} handleFilter={handleFilter}/>
